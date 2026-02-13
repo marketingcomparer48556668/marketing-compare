@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Brevo Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed Brevo review. Compare pricing, features, integrations, and alternatives. See why Brevo is great for budget-conscious teams.',
+  openGraph: {
+    title: 'Brevo Review - Marketing Platform for Growing Businesses',
+    description: 'Detailed Brevo review with pricing, features, pros, cons, and alternatives for budget-conscious teams.',
+    url: 'https://marketing-compare.vercel.app/platform/brevo',
+  },
+}
 
 export default function BrevoPage() {
   return (

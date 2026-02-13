@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Drip Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed Drip review. Compare pricing, features, integrations, and alternatives. See why Drip is great for online retailers.',
+  openGraph: {
+    title: 'Drip Review - E-commerce CRM for Personalized Marketing',
+    description: 'Detailed Drip review with pricing, features, pros, cons, and alternatives for online retailers.',
+    url: 'https://marketing-compare.vercel.app/platform/drip',
+  },
+}
 
 export default function DripPage() {
   return (

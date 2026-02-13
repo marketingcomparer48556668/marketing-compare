@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'HubSpot Marketing Hub Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed HubSpot review. Compare pricing, features, integrations, and alternatives. See why HubSpot is great for scaling teams.',
+  openGraph: {
+    title: 'HubSpot Marketing Hub Review - Inbound Marketing Platform',
+    description: 'Detailed HubSpot review with pricing, features, pros, cons, and alternatives for scaling teams.',
+    url: 'https://marketing-compare.vercel.app/platform/hubspot',
+  },
+}
 
 export default function HubSpotPage() {
   return (

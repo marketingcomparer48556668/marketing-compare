@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Mailchimp Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed Mailchimp review. Compare pricing, features, integrations, and alternatives. See why Mailchimp is great for small businesses.',
+  openGraph: {
+    title: 'Mailchimp Review - All-in-one Marketing Platform',
+    description: 'Detailed Mailchimp review with pricing, features, pros, cons, and alternatives for small businesses.',
+    url: 'https://marketing-compare.vercel.app/platform/mailchimp',
+  },
+}
 
 export default function MailchimpPage() {
   return (

@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Braze Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed Braze review. Compare pricing, features, integrations, and alternatives. See why Braze is great for enterprise teams.',
+  openGraph: {
+    title: 'Braze Review - Customer Engagement Platform',
+    description: 'Detailed Braze review with pricing, features, pros, cons, and alternatives for enterprise teams.',
+    url: 'https://marketing-compare.vercel.app/platform/braze',
+  },
+}
 
 export default function BrazePage() {
   return (

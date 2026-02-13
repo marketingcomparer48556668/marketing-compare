@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Customer.io Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed Customer.io review. Compare pricing, features, integrations, and alternatives. See why Customer.io is great for product-led growth.',
+  openGraph: {
+    title: 'Customer.io Review - Automated Messaging Platform',
+    description: 'Detailed Customer.io review with pricing, features, pros, cons, and alternatives for product-led growth.',
+    url: 'https://marketing-compare.vercel.app/platform/customerio',
+  },
+}
 
 export default function CustomerIOPage() {
   return (

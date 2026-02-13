@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privy Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed Privy review. Compare pricing, features, integrations, and alternatives. See why Privy is great for Shopify brands.',
+  openGraph: {
+    title: 'Privy Review - E-commerce Growth Marketing',
+    description: 'Detailed Privy review with pricing, features, pros, cons, and alternatives for Shopify brands.',
+    url: 'https://marketing-compare.vercel.app/platform/privy',
+  },
+}
 
 export default function PrivyPage() {
   return (

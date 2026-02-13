@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Omnisend Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed Omnisend review. Compare pricing, features, integrations, and alternatives. See why Omnisend is great for small e-commerce stores.',
+  openGraph: {
+    title: 'Omnisend Review - E-commerce Marketing Automation',
+    description: 'Detailed Omnisend review with pricing, features, pros, cons, and alternatives for small e-commerce stores.',
+    url: 'https://marketing-compare.vercel.app/platform/omnisend',
+  },
+}
 
 export default function OmnisendPage() {
   return (

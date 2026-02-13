@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'ActiveCampaign Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed ActiveCampaign review. Compare pricing, features, integrations, and alternatives. See why ActiveCampaign is great for SMBs growing fast.',
+  openGraph: {
+    title: 'ActiveCampaign Review - Customer Experience Automation',
+    description: 'Detailed ActiveCampaign review with pricing, features, pros, cons, and alternatives for SMBs growing fast.',
+    url: 'https://marketing-compare.vercel.app/platform/activecampaign',
+  },
+}
 
 export default function ActiveCampaignPage() {
   return (
