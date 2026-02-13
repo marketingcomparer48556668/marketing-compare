@@ -104,7 +104,7 @@ export default function Home() {
               MarketingCompare
             </Link>
             <nav className="flex gap-6">
-              <Link href="/" className="text-gray-600 hover:text-blue-600">
+              <Link href="/compare" className="text-gray-600 hover:text-blue-600">
                 Compare
               </Link>
               <Link href="/deals" className="text-gray-600 hover:text-blue-600">
