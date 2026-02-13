@@ -1,0 +1,11 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://marketing-compare.vercel.app/sitemap.xml
+
+# Block common bot paths (not needed for Next.js static site, but good practice)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /.well-known/

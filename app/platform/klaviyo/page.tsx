@@ -1,4 +1,15 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Klaviyo Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed Klaviyo review. Compare pricing, features, integrations, and alternatives. See why Klaviyo is great for e-commerce brands.',
+  openGraph: {
+    title: 'Klaviyo Review - Growth Marketing Platform',
+    description: 'Detailed Klaviyo review with pricing, features, pros, cons, and alternatives for e-commerce brands.',
+    url: 'https://marketing-compare.vercel.app/platform/klaviyo',
+  },
+}
 
 export default function KlaviyoPage() {
   return (
