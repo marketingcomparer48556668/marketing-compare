@@ -40,35 +40,35 @@ export default function EditorsPickPage() {
         {/* Hero */}
         <div className="text-center mb-12">
           <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-4">
-            Klaviyo
+            Omnisend
           </h1>
           <p className="text-2xl text-gray-600 mb-6">
-            The powerhouse choice for e-commerce brands
+            Simple, powerful e-commerce automation
           </p>
           <div className="flex items-center justify-center gap-2 mb-6">
             <span className="text-yellow-500 text-3xl">★★★★★</span>
-            <span className="text-3xl font-bold text-gray-900">4.8</span>
+            <span className="text-3xl font-bold text-gray-900">4.7</span>
           </div>
           <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full inline-block font-medium">
-            Best For: E-commerce brands
+            Best For: Small e-commerce stores
           </div>
         </div>
 
         {/* Why We Chose It */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Why We Chose Klaviyo</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Why We Chose Omnisend</h2>
           <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
             <p>
-              Klaviyo stands out in the crowded marketing automation space with its laser focus on e-commerce. Unlike generalist platforms, Klaviyo is built from the ground up for online retailers.
+              Omnisend nails the sweet spot between power and simplicity. For small e-commerce stores that don't have a dedicated marketing team, it's the perfect starting point.
             </p>
             <p>
-              The real-time data synchronization with Shopify, WooCommerce, and BigCommerce means every email is personalized based on actual purchase behavior—not just static demographic data.
+              The automation builder is intuitive—you don't need to be a technical marketer to set up abandoned cart emails, welcome series, or product recommendations. The drag-and-drop interface just works.
             </p>
             <p>
-              Revenue attribution is exceptional. You can see exactly which campaigns drove sales, which flows are converting, and what the true ROI is for every dollar spent on email marketing.
+              Multi-channel is seamless. Email, SMS, push notifications, and even WhatsApp are all in one platform. Your customers see a consistent message across every channel they use.
             </p>
             <p>
-              The segmentation capabilities are unmatched. Create segments based on purchase history, browse behavior, email engagement, and combine them with powerful AND/OR logic to target the exact customers you want.
+              The pre-built templates and workflows save hours. You don't start from scratch—just pick a template that matches your brand, customize the content, and launch. Fast time to value.
             </p>
           </div>
         </div>
@@ -80,27 +80,27 @@ export default function EditorsPickPage() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-green-600 mt-1">✓</span>
-                <span>Real-time e-commerce sync</span>
+                <span>Easy to use, no technical skills needed</span>
               </li>
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-green-600 mt-1">✓</span>
-                <span>Advanced segmentation</span>
+                <span>Multi-channel (Email, SMS, Push, WhatsApp)</span>
               </li>
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-green-600 mt-1">✓</span>
-                <span>Revenue-focused analytics</span>
+                <span>Pre-built automation workflows</span>
               </li>
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-green-600 mt-1">✓</span>
-                <span>300+ pre-built integrations</span>
+                <span>150+ e-commerce integrations</span>
               </li>
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-green-600 mt-1">✓</span>
-                <span>Strong SMS capabilities</span>
+                <span>Great templates and email builder</span>
               </li>
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-green-600 mt-1">✓</span>
-                <span>Active user community</span>
+                <span>Affordable pricing for small stores</span>
               </li>
             </ul>
           </div>
@@ -110,23 +110,23 @@ export default function EditorsPickPage() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-red-600 mt-1">✗</span>
-                <span>Learning curve for advanced features</span>
+                <span>Limited advanced segmentation</span>
               </li>
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-red-600 mt-1">✗</span>
-                <span>Pricing scales with contacts</span>
+                <span>Less powerful for enterprise needs</span>
               </li>
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-red-600 mt-1">✗</span>
-                <span>Can be expensive for large lists</span>
+                <span>Pricing increases with contact volume</span>
               </li>
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-red-600 mt-1">✗</span>
-                <span>Email builder could be more intuitive</span>
+                <span>Less detailed analytics than competitors</span>
               </li>
               <li className="flex items-start gap-2 text-gray-700">
                 <span className="text-red-600 mt-1">✗</span>
-                <span>Limited non-e-commerce use cases</span>
+                <span>Focused on e-commerce only</span>
               </li>
             </ul>
           </div>
@@ -143,7 +143,7 @@ export default function EditorsPickPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                   </svg>
                 </div>
-                <span className="text-gray-700">E-commerce brands</span>
+                <span className="text-gray-700">Small e-commerce stores</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-blue-100 p-2 rounded">
@@ -151,7 +151,7 @@ export default function EditorsPickPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <span className="text-gray-700">Shopify stores</span>
+                <span className="text-gray-700">Shopify & WooCommerce stores</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-blue-100 p-2 rounded">
@@ -159,7 +159,7 @@ export default function EditorsPickPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
                 </div>
-                <span className="text-gray-700">Direct-to-consumer brands</span>
+                <span className="text-gray-700">Beginner marketers</span>
               </div>
             </div>
             <div className="space-y-4">
@@ -169,7 +169,7 @@ export default function EditorsPickPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <span className="text-gray-700">Growing teams</span>
+                <span className="text-gray-700">Budget-conscious teams</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-purple-100 p-2 rounded">
@@ -177,7 +177,7 @@ export default function EditorsPickPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <span className="text-gray-700">Data-driven marketers</span>
+                <span className="text-gray-700">Quick time to value</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-purple-100 p-2 rounded">
@@ -185,7 +185,7 @@ export default function EditorsPickPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <span className="text-gray-700">Multi-channel needs</span>
+                <span className="text-gray-700">Multi-channel beginners</span>
               </div>
             </div>
           </div>
@@ -200,8 +200,8 @@ export default function EditorsPickPage() {
               <div className="text-4xl font-bold text-blue-600 mb-4">$0</div>
               <ul className="space-y-2 text-gray-600">
                 <li>• Up to 250 contacts</li>
-                <li>• Up to 500 email sends</li>
-                <li>• Email marketing only</li>
+                <li>• Email + SMS (500 total)</li>
+                <li>• Basic automation</li>
               </ul>
             </div>
             <div className="bg-blue-50 rounded-lg p-6 border-2 border-blue-500 relative">
@@ -209,21 +209,21 @@ export default function EditorsPickPage() {
                 Most Popular
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Growth</h3>
-              <div className="text-4xl font-bold text-blue-600 mb-1">$45<span className="text-xl font-normal text-gray-600">/mo</span></div>
+              <div className="text-4xl font-bold text-blue-600 mb-1">$39<span className="text-xl font-normal text-gray-600">/mo</span></div>
               <div className="text-sm text-gray-500 mb-4">billed annually</div>
               <ul className="space-y-2 text-gray-600">
                 <li>• Up to 10,000 contacts</li>
                 <li>• Email + SMS + Push</li>
-                <li>• Advanced segmentation</li>
+                <li>• Advanced workflows</li>
               </ul>
             </div>
             <div className="bg-gray-50 rounded-lg p-6 border-2 border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Enterprise</h3>
-              <div className="text-4xl font-bold text-blue-600 mb-4">Custom</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
+              <div className="text-4xl font-bold text-blue-600 mb-4">$149<span className="text-xl font-normal text-gray-600">/mo</span></div>
               <ul className="space-y-2 text-gray-600">
-                <li>• Unlimited contacts</li>
-                <li>• Dedicated support</li>
-                <li>• Custom integrations</li>
+                <li>• Up to 50,000 contacts</li>
+                <li>• All channels + WhatsApp</li>
+                <li>• Priority support</li>
               </ul>
             </div>
           </div>
@@ -231,13 +231,13 @@ export default function EditorsPickPage() {
 
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-center text-white mb-12">
-          <h2 className="text-3xl font-bold mb-4">Ready to Try Klaviyo?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Try Omnisend?</h2>
           <p className="text-xl mb-6 opacity-90">
             Start with a free account and scale as you grow
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/platform/klaviyo"
+              href="/platform/omnisend"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
             >
               Read Full Review
