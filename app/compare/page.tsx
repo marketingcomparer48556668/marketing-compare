@@ -229,8 +229,11 @@ export default function ComparePage() {
               MarketingCompare
             </Link>
             <nav className="flex gap-6">
-              <Link href="/" className="text-gray-600 hover:text-blue-600">
+              <Link href="/compare" className="text-blue-600 font-medium">
                 Compare
+              </Link>
+              <Link href="/editors-pick" className="text-amber-600 hover:text-amber-700 font-medium">
+                Editor's Pick
               </Link>
               <Link href="/deals" className="text-gray-600 hover:text-blue-600">
                 Deals
