@@ -10,6 +10,7 @@ interface PricingTier {
   price: number | null
   period: string
   features: string[]
+  contacts?: number
 }
 
 interface PlatformPricing {
@@ -131,8 +132,7 @@ export default async function PricingPage() {
                   </thead>
                   <tbody>
                     {platforms.map((platform) => {
-                      const freshness = platform.freshness
-                      const hoursAgo = freshness ? freshness.hoursAgo : 0
+                      const freshness = platform.freshness ? platform.freshness : { hoursAgo: 0, label: 'Unknown', color: 'gray' }
 
                       return (
                         <tr key={platform.platformId} className="border-t border-gray-200">
@@ -166,7 +166,7 @@ export default async function PricingPage() {
                             <ul className="space-y-1">
                               {platform.tiers.map((tier) => (
                                 <li key={tier.name} className="text-gray-600 text-xs">
-                                  <strong>{tier.name}:</strong> {tier.contacts && `${tier.contacts} contacts`}
+                                  <strong>{tier.name}:</strong> {tier.contacts && ` ${tier.contacts} contacts`}
                                 </li>
                               ))}
                             </ul>
@@ -208,7 +208,7 @@ export default async function PricingPage() {
                                 {freshness.label}
                               </span>
                               <div className="text-xs text-gray-500">
-                                ({hoursAgo}h ago)
+                                ({freshness.hoursAgo}h ago)
                               </div>
                             </div>
                           </td>
