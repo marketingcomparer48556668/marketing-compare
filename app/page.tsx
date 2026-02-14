@@ -107,6 +107,9 @@ export default function Home() {
               <Link href="/compare" className="text-gray-600 hover:text-blue-600">
                 Compare
               </Link>
+              <Link href="/pricing" className="text-blue-600 font-medium">
+                Pricing
+              </Link>
               <Link href="/editors-pick" className="text-amber-600 hover:text-amber-700 font-medium">
                 Editor's Pick
               </Link>

@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import PricingFreshness from '@/components/PricingFreshness'
+import { platformPricingData } from '@/lib/pricing-data'
 
 export const metadata: Metadata = {
   title: 'Klaviyo Review | Pricing, Features & Comparison | MarketingCompare',
@@ -10,6 +12,8 @@ export const metadata: Metadata = {
     url: 'https://marketing-compare.vercel.app/platform/klaviyo',
   },
 }
+
+const pricingData = platformPricingData.klaviyo
 
 export default function KlaviyoPage() {
   return (
@@ -89,7 +93,14 @@ export default function KlaviyoPage() {
           </div>
 
           <div className="border-t border-gray-200 pt-8 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Pricing</h2>
+
+            {/* Pricing Freshness Indicator */}
+            <PricingFreshness
+              lastUpdated={pricingData.lastUpdated}
+              promotionalOffer={pricingData.promotionalOffer}
+            />
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-semibold mb-2">Free</h3>
