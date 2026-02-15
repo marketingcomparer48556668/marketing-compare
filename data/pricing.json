@@ -4,86 +4,110 @@
     "klaviyo": {
       "name": "Klaviyo",
       "url": "https://www.klaviyo.com/pricing",
-      "plans": [
-        {
-          "name": "Free",
-          "price": 0,
-          "currency": "USD",
-          "period": "month",
-          "features": [
-            "Up to 250 active profiles",
-            "500 email sends/month",
-            "150 mobile message credits/month",
-            "Customer Hub (basic)",
-            "Built-in reporting",
-            "Email templates & drag-drop editor",
-            "Basic segmentation",
-            "Email support (first 60 days)"
-          ]
-        },
-        {
-          "name": "Email",
-          "price": 20,
-          "currency": "USD",
-          "period": "month",
-          "features": [
-            "Email marketing",
-            "Automated flows & sequences",
-            "Advanced segmentation",
-            "A/B testing",
-            "Custom domains",
-            "Email templates library"
-          ]
-        },
-        {
-          "name": "Email + SMS",
-          "price": 35,
-          "currency": "USD",
-          "period": "month",
-          "features": [
-            "Everything in Email plan",
-            "SMS marketing & flows",
-            "150 mobile message credits",
-            "SMS/MMS support",
-            "WhatsApp marketing (credits)",
-            "RCS marketing"
-          ]
-        },
-        {
-          "name": "Growth",
-          "price": 100,
-          "currency": "USD",
-          "period": "month",
-          "features": [
-            "Up to 2,500 contacts",
-            "Up to 25,000 emails/month",
-            "Advanced analytics & reporting",
-            "Custom branding",
-            "Priority email support",
-            "Marketing Agent AI"
-          ]
-        },
-        {
-          "name": "Enterprise",
-          "price": null,
-          "currency": "USD",
-          "period": "custom",
-          "features": [
-            "Unlimited contacts",
-            "Unlimited emails & SMS",
-            "Dedicated account manager",
-            "Custom contracts & SLAs",
-            "24/7 priority support",
-            "Advanced integrations"
-          ]
-        }
-      ],
-      "lastScraped": "2026-02-15T11:59:58.399Z"
+      "plans": [],
+      "lastScraped": "2026-02-15T13:28:00.082Z"
     },
     "omnisend": {
       "name": "Omnisend",
       "url": "https://www.omnisend.com/pricing",
-      "plans": []
+      "plans": [
+        {
+          "name": "Free Plan",
+          "description": "Up to 250 contacts. Perfect for starting out.",
+          "price": 0,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "Unlimited emails",
+            "Unlimited web push notifications",
+            "Account expert (from $400)",
+            "24/7 Priority support",
+            "Advanced reporting",
+            "500 contacts",
+            "$1 in free SMS to try",
+            "6,000 emails / month",
+            "60 SMS (one time)",
+            "Unlimited web push notifications",
+            "Account expert (from $400)",
+            "24/7 Priority support",
+            "Forms AI",
+            "2,500 contacts",
+            "Global SMS messaging",
+            "Unlimited emails",
+            "3,933 free SMS / month",
+            "Unlimited web push notifications",
+            "Account expert (from $400)",
+            "24/7 Priority support",
+            "Advanced reporting",
+            "Forms AI",
+            "Personalized content\nADD-ON",
+            "Custom contact amount",
+            "Global SMS messaging",
+            "Unlimited emails",
+            "Unlimited web push notifications",
+            "Account expert",
+            "24/7 Priority support",
+            "Advanced reporting",
+            "Forms AI",
+            "Personalized content\nADD-ON"
+          ]
+        },
+        {
+          "name": "Standard Plan",
+          "description": "Best for growing businesses. Pricing is calculated based on contact volume (starting at ~$20/mo).",
+          "price": null,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "500 contacts",
+            "$1 in free SMS to try",
+            "6,000 emails / month",
+            "60 SMS (one time)",
+            "Unlimited web push notifications",
+            "Account expert (from $400)",
+            "24/7 Priority support",
+            "Forms AI"
+          ]
+        },
+        {
+          "name": "Pro Plan",
+          "description": "Best for high-volume senders. Includes global SMS credits. Pricing is calculated based on volume.",
+          "price": null,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "2,500 contacts",
+            "Global SMS messaging",
+            "Unlimited emails",
+            "3,933 free SMS / month",
+            "Unlimited web push notifications",
+            "Account expert (from $400)",
+            "24/7 Priority support",
+            "Advanced reporting",
+            "Forms AI",
+            "Personalized content\nADD-ON"
+          ]
+        },
+        {
+          "name": "Custom Pricing",
+          "description": "Best for businesses with >150,000 contacts or specific needs. Contact sales for a tailored plan.",
+          "price": "Contact Sales",
+          "currency": "USD",
+          "period": "custom",
+          "features": [
+            "Custom contact amount",
+            "Global SMS messaging",
+            "Unlimited emails",
+            "Unlimited web push notifications",
+            "Account expert",
+            "24/7 Priority support",
+            "Advanced reporting",
+            "Forms AI",
+            "Personalized content\nADD-ON"
+          ]
+        }
+      ],
+      "lastScraped": "2026-02-15T16:52:35.615Z"
     },
     "privy": {
       "name": "Privy",
