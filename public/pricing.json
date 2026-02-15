@@ -1,0 +1,129 @@
+{
+  "lastUpdated": "2026-02-15T11:59:57.757Z",
+  "platforms": {
+    "klaviyo": {
+      "name": "Klaviyo",
+      "url": "https://www.klaviyo.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "price": 0,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "Up to 250 active profiles",
+            "500 email sends/month",
+            "150 mobile message credits/month",
+            "Customer Hub (basic)",
+            "Built-in reporting",
+            "Email templates & drag-drop editor",
+            "Basic segmentation",
+            "Email support (first 60 days)"
+          ]
+        },
+        {
+          "name": "Email",
+          "price": 20,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "Email marketing",
+            "Automated flows & sequences",
+            "Advanced segmentation",
+            "A/B testing",
+            "Custom domains",
+            "Email templates library"
+          ]
+        },
+        {
+          "name": "Email + SMS",
+          "price": 35,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "Everything in Email plan",
+            "SMS marketing & flows",
+            "150 mobile message credits",
+            "SMS/MMS support",
+            "WhatsApp marketing (credits)",
+            "RCS marketing"
+          ]
+        },
+        {
+          "name": "Growth",
+          "price": 100,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "Up to 2,500 contacts",
+            "Up to 25,000 emails/month",
+            "Advanced analytics & reporting",
+            "Custom branding",
+            "Priority email support",
+            "Marketing Agent AI"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": null,
+          "currency": "USD",
+          "period": "custom",
+          "features": [
+            "Unlimited contacts",
+            "Unlimited emails & SMS",
+            "Dedicated account manager",
+            "Custom contracts & SLAs",
+            "24/7 priority support",
+            "Advanced integrations"
+          ]
+        }
+      ],
+      "lastScraped": "2026-02-15T11:59:58.399Z"
+    },
+    "omnisend": {
+      "name": "Omnisend",
+      "url": "https://www.omnisend.com/pricing",
+      "plans": []
+    },
+    "privy": {
+      "name": "Privy",
+      "url": "https://privy.com/pricing",
+      "plans": []
+    },
+    "mailchimp": {
+      "name": "Mailchimp",
+      "url": "https://mailchimp.com/pricing",
+      "plans": []
+    },
+    "activecampaign": {
+      "name": "ActiveCampaign",
+      "url": "https://www.activecampaign.com/pricing",
+      "plans": []
+    },
+    "hubspot": {
+      "name": "HubSpot",
+      "url": "https://www.hubspot.com/pricing",
+      "plans": []
+    },
+    "braze": {
+      "name": "Braze",
+      "url": "https://www.braze.com/pricing",
+      "plans": []
+    },
+    "customerio": {
+      "name": "Customer.io",
+      "url": "https://www.customer.io/pricing",
+      "plans": []
+    },
+    "brevo": {
+      "name": "Brevo",
+      "url": "https://www.brevo.com/pricing",
+      "plans": []
+    },
+    "drip": {
+      "name": "Drip",
+      "url": "https://www.drip.com/pricing",
+      "plans": []
+    }
+  }
+}
