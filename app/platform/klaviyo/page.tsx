@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getPlatformPricing, formatPrice } from '@/lib/pricing'
 
 export const metadata: Metadata = {
   title: 'Klaviyo Review | Pricing, Features & Comparison | MarketingCompare',
@@ -12,6 +13,10 @@ export const metadata: Metadata = {
 }
 
 export default function KlaviyoPage() {
+  const klaviyoPricing = getPlatformPricing('klaviyo');
+  const plans = klaviyoPricing?.plans || [];
+  const lastUpdated = klaviyoPricing?.lastScraped ? new Date(klaviyoPricing.lastScraped).toLocaleDateString() : 'Not available';
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Header */}
@@ -47,6 +52,9 @@ export default function KlaviyoPage() {
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-2">Klaviyo</h1>
               <p className="text-xl text-gray-600">Growth marketing platform built for modern brands</p>
+              <p className="text-sm text-gray-500 mt-2">
+                Pricing last updated: {lastUpdated}
+              </p>
             </div>
             <div className="flex items-center gap-2 bg-green-100 px-4 py-2 rounded-lg">
               <span className="text-yellow-500 text-2xl">★</span>
@@ -90,34 +98,33 @@ export default function KlaviyoPage() {
 
           <div className="border-t border-gray-200 pt-8 mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Pricing</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-lg font-semibold mb-2">Free</h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">$0</p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>Up to 250 contacts</li>
-                  <li>Up to 500 email sends</li>
-                  <li>Email marketing only</li>
-                </ul>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-6 border-2 border-blue-500">
-                <h3 className="text-lg font-semibold mb-2">Growth</h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">$45<span className="text-lg font-normal text-gray-600">/mo</span></p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>Up to 10,000 contacts</li>
-                  <li>Email + SMS + Push</li>
-                  <li>Advanced segmentation</li>
-                </ul>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-lg font-semibold mb-2">Enterprise</h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">Custom</p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>Unlimited contacts</li>
-                  <li>Dedicated support</li>
-                  <li>Custom integrations</li>
-                </ul>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {plans.map((plan, index) => (
+                <div
+                  key={plan.name}
+                  className={`rounded-lg p-6 ${
+                    index === 0
+                      ? 'bg-green-50 border-2 border-green-500'
+                      : index === plans.length - 1
+                      ? 'bg-purple-50 border-2 border-purple-500'
+                      : 'bg-gray-50 border border-gray-200'
+                  }`}
+                >
+                  <h3 className="text-lg font-semibold mb-2">{plan.name}</h3>
+                  <p className="text-3xl font-bold text-blue-600 mb-4">
+                    {formatPrice(plan.price, plan.currency)}
+                  </p>
+                  <p className="text-sm text-gray-500 mb-4">{plan.period}</p>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="text-green-500 mt-0.5">•</span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -128,6 +135,8 @@ export default function KlaviyoPage() {
               <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium">SMS</span>
               <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">Mobile Push</span>
               <span className="bg-orange-100 text-orange-800 px-4 py-2 rounded-full font-medium">In-app</span>
+              <span className="bg-pink-100 text-pink-800 px-4 py-2 rounded-full font-medium">WhatsApp</span>
+              <span className="bg-red-100 text-red-800 px-4 py-2 rounded-full font-medium">RCS</span>
             </div>
           </div>
 
@@ -165,6 +174,14 @@ export default function KlaviyoPage() {
               <li className="flex items-center gap-2">
                 <span className="text-green-500">✓</span>
                 <span>Webhooks & APIs</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-green-500">✓</span>
+                <span>Marketing Agent AI</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-green-500">✓</span>
+                <span>Customer Hub</span>
               </li>
             </ul>
           </div>
