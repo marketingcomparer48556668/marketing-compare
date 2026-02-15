@@ -1,6 +1,14 @@
 import Link from 'next/link'
 import { getPlatformPricing, formatPrice, formatPriceRange } from '@/lib/pricing'
 
+type PricingPlan = {
+  name: string;
+  price: number | null;
+  currency: string;
+  period: string;
+  features: string[];
+}
+
 const platforms = [
   {
     id: 'klaviyo',
@@ -91,7 +99,7 @@ function getPricingText(platformId: string): string {
   }
 
   const prices = pricing.plans
-    .map((plan) => plan.price)
+    .map((plan: PricingPlan) => plan.price)
     .filter((price): price is number => price !== null);
 
   if (prices.length === 0) {

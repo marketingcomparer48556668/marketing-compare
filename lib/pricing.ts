@@ -2,7 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const DATA_FILE = path.join(process.cwd(), 'data/pricing.json');
+const DATA_FILE = path.join(process.cwd(), 'public/pricing.json');
 
 export interface PricingPlan {
   name: string;
@@ -27,15 +27,21 @@ export interface PricingData {
 }
 
 let pricingCache: PricingData | null = null;
+let cacheTimestamp: number = 0;
+const CACHE_TTL = 5 * 60 * 1000; // 5 minutes in milliseconds
 
 export function loadPricingData(): PricingData {
-  if (pricingCache) {
+  const now = Date.now();
+
+  // Return cached data if still fresh
+  if (pricingCache && (now - cacheTimestamp) < CACHE_TTL) {
     return pricingCache;
   }
 
   try {
     const data = fs.readFileSync(DATA_FILE, 'utf8');
     pricingCache = JSON.parse(data);
+    cacheTimestamp = now;
     return pricingCache;
   } catch (error) {
     console.error('Error loading pricing data:', error);

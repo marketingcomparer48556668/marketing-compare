@@ -17,6 +17,21 @@ export default function KlaviyoPage() {
   const plans = klaviyoPricing?.plans || [];
   const lastUpdated = klaviyoPricing?.lastScraped ? new Date(klaviyoPricing.lastScraped).toLocaleDateString() : 'Not available';
 
+export const metadata: Metadata = {
+  title: 'Klaviyo Review | Pricing, Features & Comparison | MarketingCompare',
+  description: 'Read our detailed Klaviyo review. Compare pricing, features, integrations, and alternatives. See why Klaviyo is great for e-commerce brands.',
+  openGraph: {
+    title: 'Klaviyo Review - Growth Marketing Platform',
+    description: 'Detailed Klaviyo review with pricing, features, pros, cons, and alternatives for e-commerce brands.',
+    url: 'https://marketing-compare.vercel.app/platform/klaviyo',
+  },
+}
+
+export default function KlaviyoPage() {
+  const klaviyoPricing = getPlatformPricing('klaviyo');
+  const plans = klaviyoPricing?.plans || [];
+  const lastUpdated = klaviyoPricing?.lastScraped ? new Date(klaviyoPricing.lastScraped).toLocaleDateString() : 'Not available';
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Header */}
