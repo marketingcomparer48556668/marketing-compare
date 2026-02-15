@@ -16,14 +16,6 @@ export default function KlaviyoPage() {
   const klaviyoPricing = getPlatformPricing('klaviyo');
   const plans = klaviyoPricing?.plans || [];
   const lastUpdated = klaviyoPricing?.lastScraped ? new Date(klaviyoPricing.lastScraped).toLocaleDateString() : 'Not available';
-    url: 'https://marketing-compare.vercel.app/platform/klaviyo',
-  },
-}
-
-export default function KlaviyoPage() {
-  const klaviyoPricing = getPlatformPricing('klaviyo');
-  const plans = klaviyoPricing?.plans || [];
-  const lastUpdated = klaviyoPricing?.lastScraped ? new Date(klaviyoPricing.lastScraped).toLocaleDateString() : 'Not available';
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">

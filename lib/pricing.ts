@@ -35,20 +35,22 @@ export function loadPricingData(): PricingData {
 
   // Return cached data if still fresh
   if (pricingCache && (now - cacheTimestamp) < CACHE_TTL) {
-    return pricingCache;
+    return pricingCache!;
   }
 
   try {
     const data = fs.readFileSync(DATA_FILE, 'utf8');
     pricingCache = JSON.parse(data);
     cacheTimestamp = now;
-    return pricingCache;
+    return pricingCache!;
   } catch (error) {
     console.error('Error loading pricing data:', error);
-    return {
+    const fallback: PricingData = {
       lastUpdated: new Date().toISOString(),
       platforms: {},
     };
+    pricingCache = fallback;
+    return fallback;
   }
 }
 
