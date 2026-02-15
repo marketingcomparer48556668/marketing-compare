@@ -1,0 +1,94 @@
+{
+  "lastUpdated": "2026-02-15T11:51:42.065Z",
+  "platforms": {
+    "klaviyo": {
+      "name": "Klaviyo",
+      "url": "https://www.klaviyo.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "price": 0,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "Up to 250 contacts",
+            "Up to 500 emails/month",
+            "Basic email flows",
+            "Segmentation"
+          ]
+        },
+        {
+          "name": "Email",
+          "price": 20,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "Up to 500 contacts",
+            "Up to 5,000 emails/month",
+            "Email flows",
+            "Advanced segmentation",
+            "A/B testing"
+          ]
+        },
+        {
+          "name": "Email + SMS",
+          "price": 35,
+          "currency": "USD",
+          "period": "month",
+          "features": [
+            "Up to 500 contacts",
+            "Up to 5,000 emails/month",
+            "SMS flows",
+            "Everything in Email"
+          ]
+        }
+      ],
+      "lastScraped": "2026-02-15T11:51:42.066Z"
+    },
+    "omnisend": {
+      "name": "Omnisend",
+      "url": "https://www.omnisend.com/pricing",
+      "plans": []
+    },
+    "privy": {
+      "name": "Privy",
+      "url": "https://privy.com/pricing",
+      "plans": []
+    },
+    "mailchimp": {
+      "name": "Mailchimp",
+      "url": "https://mailchimp.com/pricing",
+      "plans": []
+    },
+    "activecampaign": {
+      "name": "ActiveCampaign",
+      "url": "https://www.activecampaign.com/pricing",
+      "plans": []
+    },
+    "hubspot": {
+      "name": "HubSpot",
+      "url": "https://www.hubspot.com/pricing",
+      "plans": []
+    },
+    "braze": {
+      "name": "Braze",
+      "url": "https://www.braze.com/pricing",
+      "plans": []
+    },
+    "customerio": {
+      "name": "Customer.io",
+      "url": "https://www.customer.io/pricing",
+      "plans": []
+    },
+    "brevo": {
+      "name": "Brevo",
+      "url": "https://www.brevo.com/pricing",
+      "plans": []
+    },
+    "drip": {
+      "name": "Drip",
+      "url": "https://www.drip.com/pricing",
+      "plans": []
+    }
+  }
+}
