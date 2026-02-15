@@ -1,49 +1,26 @@
 {
-  "lastUpdated": "2026-02-15T11:51:42.065Z",
+  "lastUpdated": "2026-02-15T11:54:22.908Z",
   "platforms": {
     "klaviyo": {
       "name": "Klaviyo",
       "url": "https://www.klaviyo.com/pricing",
       "plans": [
         {
-          "name": "Free",
+          "name": "Free Plan",
           "price": 0,
           "currency": "USD",
           "period": "month",
           "features": [
-            "Up to 250 contacts",
-            "Up to 500 emails/month",
-            "Basic email flows",
-            "Segmentation"
-          ]
-        },
-        {
-          "name": "Email",
-          "price": 20,
-          "currency": "USD",
-          "period": "month",
-          "features": [
-            "Up to 500 contacts",
-            "Up to 5,000 emails/month",
-            "Email flows",
-            "Advanced segmentation",
-            "A/B testing"
-          ]
-        },
-        {
-          "name": "Email + SMS",
-          "price": 35,
-          "currency": "USD",
-          "period": "month",
-          "features": [
-            "Up to 500 contacts",
-            "Up to 5,000 emails/month",
-            "SMS flows",
-            "Everything in Email"
+            "Up to 250 profiles",
+            "500 emails/month",
+            "150 mobile message credits",
+            "Customer Hub",
+            "Built-in reporting",
+            "Email support"
           ]
         }
       ],
-      "lastScraped": "2026-02-15T11:51:42.066Z"
+      "lastScraped": "2026-02-15T11:54:23.554Z"
     },
     "omnisend": {
       "name": "Omnisend",
