@@ -7,11 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "scrape-klaviyo": "node scripts/scrape-klaviyo.js"
+    "scrape-klaviyo": "node scripts/scrape-klaviyo.js",
+    "scrape-klaviyo-final": "node scripts/scrape-klaviyo-final.js",
+    "scrape-omnisend": "node scripts/scrape-omnisend.js",
+    "scrape-omnisend-final": "node scripts/scrape-omnisend-final.js",
+    "scrape-omnisend-final": "node scripts/scrape-omnisend-final.js"
   },
   "dependencies": {
     "axios": "^1.13.5",
-    "cheerio": "^1.12.0",
+    "cheerio": "latest",
     "next": "14.0.4",
     "playwright": "^1.58.2",
     "react": "^18",

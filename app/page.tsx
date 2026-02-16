@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { getPlatformPricing, formatPrice, formatPriceRange } from '@/lib/pricing'
+import EmailCapture from '@/components/EmailCapture'
 
 type PricingPlan = {
   name: string;
@@ -156,6 +157,15 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Email Capture Banner */}
+        <EmailCapture
+          title="Get Email Marketing Tips & Platform Deals"
+          subtitle="Join 10,000+ marketers. Weekly tips, platform updates, and exclusive deals delivered to your inbox."
+          buttonText="Get Free Tips"
+          placeholder="Enter your email"
+          variant="banner"
+        />
+
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
@@ -242,6 +252,17 @@ export default function Home() {
               </Link>
             );
           })}
+        </div>
+
+        {/* Email Capture Card */}
+        <div className="mt-16">
+          <EmailCapture
+            title="Download Our Free Comparison Sheet"
+            subtitle="Get a detailed side-by-side comparison of all 10 email marketing platforms. Features, pricing, pros & cons - everything you need to decide."
+            buttonText="Download Free"
+            placeholder="Enter your email"
+            variant="card"
+          />
         </div>
       </div>
 
