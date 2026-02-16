@@ -249,10 +249,10 @@ export async function generateMetadata({ params }: AlternativesPageProps): Promi
 
   return {
     title: `Best ${platform.name} Alternatives in 2025 | MarketingCompare`,
-    description: `Looking for ${platform.name} alternatives? Compare to top platforms and find the perfect fit for your business.`,
+    description: `Compare top alternatives to ${platform.name}. Find better features, pricing, and value for your email marketing needs.`,
     openGraph: {
       title: `Best ${platform.name} Alternatives in 2025`,
-      description: `Looking for ${platform.name} alternatives? Compare to top platforms and find the perfect fit for your business.`,
+      description: `Compare top alternatives to ${platform.name}. Find better features, pricing, and value for your email marketing needs.`,
       type: 'article',
     },
   }
@@ -317,7 +317,7 @@ export default function AlternativesPage({ params }: AlternativesPageProps {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Best {targetPlatform.name} Alternatives in 2025</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Looking for {targetPlatform.name} alternatives? Compare to top platforms and find the perfect fit for your business.
+            Looking for {targetPlatform.name} alternatives? Compare top platforms and find the perfect match for your business.
           </p>
         </div>
 
@@ -348,80 +348,43 @@ export default function AlternativesPage({ params }: AlternativesPageProps {
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex-1">
-                    <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium inline-block mb-3">
-                      {alt.rating >= 4.7 ? 'Best Value' : 'Great Choice'}
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{alt.name}</h3>
-                      <p className="text-gray-600 mb-2">{alt.tagline}</p>
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-500">Best for: {alt.bestFor}</span>
-                        <div className="flex items-center gap-1">
-                          <span className="text-yellow-500">★</span>
-                          <span className="font-semibold">{alt.rating}</span>
-                        </div>
-                      </div>
-                    </div>
+                    <div className="text-3xl font-bold text-gray-900 mb-2">{alt.rating} ★</div>
+                    <div className="text-sm text-gray-500">{alt.pricing}</div>
                   </div>
-                  <div className="text-blue-600">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7" />
-                    </svg>
+                  <Link
+                    href={`/compare/${params.platform}-vs-${id}`}
+                    className="text-blue-600 text-sm hover:text-blue-800 font-medium"
+                  >
+                    Compare
+                  </Link>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{alt.name}</h3>
+                  <p className="text-gray-600 mb-2">{alt.tagline}</p>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-500">Best for: {alt.bestFor}</span>
                   </div>
+                </div>
                 </div>
               </Link>
             ))}
           </div>
         </div>
 
-        {/* Migration Guide */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg shadow-lg p-8 mt-12 text-white text-center">
-          <h2 className="text-2xl font-bold mb-4">How to Switch from {targetPlatform.name}</h2>
-          <div className="max-w-3xl mx-auto text-left">
-            <ol className="space-y-3">
-              <li className="flex gap-3">
-                <span className="font-bold text-blue-600">Step 1:</span>
-                <span>Export your email lists and contacts from {targetPlatform.name}</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="font-bold text-blue-600">Step 2:</span>
-                <span>Choose your new platform and set up your account</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="font-bold text-blue-600">Step 3:</span>
-                <span>Import your contacts and re-create your email templates</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="font-bold text-blue-600">Step 4:</span>
-                <span>Set up your automation workflows (may need some reconfiguration)</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="font-bold text-blue-600">Step 5:</span>
-                <span>Test thoroughly before cancelling your {targetPlatform.name} subscription</span>
-              </li>
-            </ol>
-          </div>
-        </div>
-
-        {/* CTA */}
+        {/* All Guides CTA */}
         <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Ready to Make the Switch?</h2>
-          <p className="text-gray-600 mb-6">
-            Compare {targetPlatform.name} with these top alternatives and find your perfect match.
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Need More Help?</h2>
+          <p className="opacity-90 mb-6">
+            Explore our comprehensive guides for choosing the right email marketing platform, optimizing your campaigns, and growing your business.
           </p>
-          <div className="flex gap-4 justify-center">
-            <Link href="/compare" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
-              Compare All Platforms
-            </Link>
-            <Link href={`/platform/${params.platform}`} className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block">
-              View {targetPlatform.name} Details
-            </Link>
-          </div>
+          <Link href="/guides" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
+            Browse All Guides
+          </Link>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-8 mt-12">
+      <footer className="bg-gray-900 text-gray-400 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p>&copy; 2024 MarketingCompare. Compare with confidence.</p>
         </div>
