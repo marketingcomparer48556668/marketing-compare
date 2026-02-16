@@ -132,6 +132,9 @@ export default function Home() {
               <Link href="/compare" className="text-gray-600 hover:text-blue-600">
                 Compare
               </Link>
+              <Link href="/guides" className="text-gray-600 hover:text-blue-600">
+                Guides
+              </Link>
               <Link href="/editors-pick" className="text-amber-600 hover:text-amber-700 font-medium">
                 Editor's Pick
               </Link>
@@ -159,11 +162,10 @@ export default function Home() {
 
         {/* Email Capture Banner */}
         <EmailCapture
+          variant="inline"
           title="Get Email Marketing Tips & Platform Deals"
-          subtitle="Join 10,000+ marketers. Weekly tips, platform updates, and exclusive deals delivered to your inbox."
-          buttonText="Get Free Tips"
-          placeholder="Enter your email"
-          variant="banner"
+          description="Join 10,000+ marketers. Weekly tips, platform updates, and exclusive deals delivered to your inbox."
+          cta="Get Free Tips"
         />
 
         {/* Feature Cards */}
@@ -257,11 +259,10 @@ export default function Home() {
         {/* Email Capture Card */}
         <div className="mt-16">
           <EmailCapture
+            variant="inline"
             title="Download Our Free Comparison Sheet"
-            subtitle="Get a detailed side-by-side comparison of all 10 email marketing platforms. Features, pricing, pros & cons - everything you need to decide."
-            buttonText="Download Free"
-            placeholder="Enter your email"
-            variant="card"
+            description="Get a detailed side-by-side comparison of all 10 email marketing platforms. Features, pricing, pros & cons - everything you need to decide."
+            cta="Download Free"
           />
         </div>
       </div>
